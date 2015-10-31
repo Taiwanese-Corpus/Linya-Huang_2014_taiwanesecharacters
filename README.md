@@ -10,7 +10,7 @@
 ## 資料處理
 
 ### 原始資料
-本專案原始資料是用(google-sites-liberation)[https://github.com/sih4sing5hong5/google-sites-liberation]掠的。
+本專案原始資料是用[google-sites-liberation](https://github.com/sih4sing5hong5/google-sites-liberation)掠的。
 
 ### 臺灣言語資料庫
 在`臺灣言語資料庫`專案目錄下
