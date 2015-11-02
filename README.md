@@ -26,5 +26,5 @@ python 產生臺灣言語資料庫格式.py
 #### 匯入資料
 在`臺灣言語資料庫`專案目錄下
 ```bash
-python manage.py 匯入資料 https://Taiwanese-Corpus.github.io/moe_minkalaok/咱的字你敢捌.yaml
+python manage.py 匯入資料 https://Taiwanese-Corpus.github.io/hakka_elearning/臺灣客話詞彙資料庫語料.yaml
 ```
