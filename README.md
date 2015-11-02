@@ -16,9 +16,15 @@
 在`臺灣言語資料庫`專案目錄下
 ```bash
 git clone https://github.com/Taiwanese-Corpus/Linya-huang_taiwanesecharacters.git
-sudo apt-get install -y python-virtualenv
+sudo apt-get install -y python-virtualenv python3 python3-dev libyaml-dev
 virtualenv --python=python3 venv
 . venv/bin/activate
-pip install -r requirements.txt
-echo "from 轉到臺灣言語資料庫.整合到資料庫 import 走 ; 走()" | PYTHONPATH=Linya-huang_taiwanesecharacters python manage.py shell
+pip install pyyaml beautifulsoup4 lxml
+python 產生臺灣言語資料庫格式.py
+```
+
+#### 匯入資料
+在`臺灣言語資料庫`專案目錄下
+```bash
+python manage.py 匯入資料 https://Taiwanese-Corpus.github.io/moe_minkalaok/咱的字你敢捌.yaml
 ```
