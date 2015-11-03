@@ -1,6 +1,6 @@
 # 咱的字你敢捌－台語漢字
 
-##緣起
+## 緣起
 為推廣台語漢字，特設立此平台，依教育部閩南語常用辭典為標準校正台語歌詞用字。
 為著欲推廣台語漢字，特別設立這个平台，依教育部閩南語常用辭典為標準校正台語歌詞用字。
 (純為學術研究，絕無商業用途)
@@ -13,9 +13,7 @@
 本專案原始資料是用[google-sites-liberation](https://github.com/sih4sing5hong5/google-sites-liberation)掠的。
 
 ### 臺灣言語資料庫
-在`臺灣言語資料庫`專案目錄下
 ```bash
-git clone https://github.com/Taiwanese-Corpus/Linya-huang_taiwanesecharacters.git
 sudo apt-get install -y python-virtualenv python3 python3-dev libyaml-dev
 virtualenv --python=python3 venv
 . venv/bin/activate
@@ -26,5 +24,5 @@ python 產生臺灣言語資料庫格式.py
 #### 匯入資料
 在`臺灣言語資料庫`專案目錄下
 ```bash
-python manage.py 匯入資料 https://Taiwanese-Corpus.github.io/moe_minkalaok/咱的字你敢捌.yaml
+python manage.py 匯入資料 https://Taiwanese-Corpus.github.io/hakka_elearning/臺灣客話詞彙資料庫語料.yaml
 ```

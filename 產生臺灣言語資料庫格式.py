@@ -51,7 +51,10 @@ if __name__ == '__main__':
     到資料庫 = 處理資料()
     for 舊, 新 in 到資料庫.資料抓出來():
         print(舊, '@@', 新)
-        資料內容['下層'].append({'相關資料組': [舊, 新]})
+        資料內容['下層'].append({'相關資料組': [
+            {'文本資料': 舊},
+            {'文本資料': 新},
+        ]})
 
     with open(join(_專案目錄, '咱的字你敢捌.yaml'), 'w') as 檔案:
         yaml.dump(資料內容, 檔案, default_flow_style=False, allow_unicode=True)
